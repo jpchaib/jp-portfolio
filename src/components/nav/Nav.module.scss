@@ -1,0 +1,52 @@
+@use "../../style/style.scss";
+
+.Bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100px;
+    overflow: visible;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.Right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    overflow: hidden;
+}
+
+.Link {
+    width: 125px;
+    margin: 30px;
+    font-size: 36px;
+    font-family: "Fira Code";
+    font-weight: bolder;
+    color: style.$color4;
+    transition: 0.8s;
+
+    &:hover {
+        color: style.$color2;
+        transition: 0.8s;
+    }
+}
+
+.Link__last {
+    width: 125px;
+    margin-right: 100px;
+    margin-left: 60px;
+    font-size: 36px;
+    font-family: "Fira Code";
+    font-weight: bolder;
+    color: style.$color4;
+    transition: 0.8s;
+    &:hover {
+        color: style.$color2;
+        transition: 0.8s;
+    }
+}

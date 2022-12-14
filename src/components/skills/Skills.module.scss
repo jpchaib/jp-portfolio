@@ -1,0 +1,180 @@
+@use "../../style/style.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: scroll;
+}
+
+.Container {
+    background-color: style.$color1;
+    opacity: 0;
+    position: fixed;
+    border-right: 1px solid style.$color5;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100vh;
+    animation: emerge 1s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes emerge {
+    100% {
+        opacity: 90%;
+    }
+}
+
+.SkillBox {
+    display: grid;
+    position: fixed;
+    top: 200px;
+    left: -25vw;
+    width: 400px;
+    height: 90vh;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    justify-content: center;
+    animation: slide 1s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes slide {
+    100% {
+        left: 10px;
+    }
+}
+
+.Link {
+    width: 100px;
+    height: 100px;
+}
+
+.Image {
+    cursor: pointer;
+    width: 100px;
+    transition: 0.8s;
+    opacity: 60%;
+    &:hover {
+        width: 150px;
+        transition: 0.8s;
+        opacity: 100%;
+    }
+}
+
+.Description {
+    position: fixed;
+    top: 200px;
+    left: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 60vw;
+    height: 80vh;
+    background-color: style.$color1;
+    opacity: 70%;
+    border-radius: 30px;
+    transition: all 0.8s;
+}
+
+.Title {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+}
+
+.ImageBox {
+    top: 300px;
+    width: 200px;
+    transition: 0.8s;
+}
+
+h1 {
+    margin: 50px;
+    color: style.$color4;
+    font-family: "Press Start 2P";
+}
+
+h2 {
+    line-height: 50px;
+    height: 500px;
+    text-align: justify;
+    font-size: xx-large;
+    margin: 50px;
+    color: style.$color4;
+    font-family: "Fira Code";
+}
+
+h3 {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 30px;
+    margin: 50px;
+    color: style.$color5;
+    font-family: "Press Start 2P";
+}
+
+.Face {
+    position: fixed;
+    bottom: 0;
+    right: -300px;
+    width: 400px;
+    animation: slideface 0.5s forwards;
+    animation-delay: 0s;
+}
+
+@keyframes slideface {
+    100% {
+        right: 100px;
+    }
+}
+
+.csstyping p {
+    position: fixed;
+    bottom: 400px;
+    left: 1200px;
+    padding: 0.4em;
+    border-right: 0.15em solid style.$color4;
+    font-family: "Press Start 2P";
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 30px;
+    height: 1.1em;
+    color: style.$color5;
+    width: 31em;
+    -webkit-animation: type 5s steps(40, end);
+    animation: type 3.1s steps(31, end), blink 0.5s step-end infinite alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: 0.15em solid style.$color4;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
+}

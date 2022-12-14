@@ -1,0 +1,70 @@
+@use "../../style/style.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container {
+    background-color: style.$color1;
+    opacity: 70%;
+    position: fixed;
+    bottom: 0;
+    left: center;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+
+    & h4 {
+        font-size: 30px;
+        text-align: center;
+        color: style.$color4;
+        font-weight: 100;
+        font-family: "Fira Code";
+        line-height: 30px;
+    }
+}
+
+.Copy {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    & button {
+        padding: 5px;
+        height: 30px;
+    }
+}
+
+.CopyImage {
+    width: 20px;
+}
+
+.Link {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Image {
+    width: 200px;
+}
+
+.Foot {
+    background-color: style.$color1;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    border-top: 1px solid style.$color4;
+    & p {
+        text-align: right;
+        margin: 30px;
+        color: style.$color5;
+    }
+}
