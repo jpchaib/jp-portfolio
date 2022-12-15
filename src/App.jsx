@@ -12,8 +12,8 @@ import About from "./components/about/About";
 
 function App() {
     return (
-        <BrowserRouter>
-            <div className={style.Body}>
+        <div className={style.Body}>
+            <BrowserRouter>
                 <Nav className={style.Nav} />
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
@@ -21,8 +21,8 @@ function App() {
                     <Route path="/skills" element={<Skills />}></Route>
                     <Route path="/contact" element={<Contact />}></Route>
                 </Routes>
-            </div>
-        </BrowserRouter>
+            </BrowserRouter>
+        </div>
     );
 }
 

@@ -126,7 +126,7 @@ h3 {
     position: fixed;
     bottom: 0;
     right: -300px;
-    width: 400px;
+    width: 20vw;
     animation: slideface 0.5s forwards;
     animation-delay: 0s;
 }
@@ -137,23 +137,29 @@ h3 {
     }
 }
 
-.csstyping p {
-    position: fixed;
-    bottom: 400px;
-    left: 1200px;
-    padding: 0.4em;
-    border-right: 0.15em solid style.$color4;
-    font-family: "Press Start 2P";
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 30px;
-    height: 1.1em;
-    color: style.$color5;
-    width: 31em;
-    -webkit-animation: type 5s steps(40, end);
-    animation: type 3.1s steps(31, end), blink 0.5s step-end infinite alternate;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+.csstyping {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    & p {
+        position: fixed;
+        align-self: flex-end;
+        height: 20vw;
+        padding: 0.4em;
+        border-right: 0.15em solid style.$color4;
+        font-family: "Press Start 2P";
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 30px;
+        height: 1.1em;
+        color: style.$color5;
+        width: 31em;
+        -webkit-animation: type 5s steps(40, end);
+        animation: type 3.1s steps(31, end), blink 0.5s step-end infinite alternate;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
 }
 
 @keyframes type {

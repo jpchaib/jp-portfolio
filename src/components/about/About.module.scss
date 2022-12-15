@@ -1,23 +1,37 @@
 @use "../../style/style.scss";
 
-.Body {
-    position: relative;
+.About {
+    position: absolute;
     top: 150px;
+    overflow-y: scroll;
 }
 
 .Head {
     display: flex;
     position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100vw;
-    opacity: 90%;
+
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     background-color: style.$color1;
     overflow-y: auto;
     overflow-x: auto;
     border-bottom: 1px solid style.$color4;
-    &__white {
+    &__white__right {
+        display: flex;
+        position: relative;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        width: 100vw;
+
+        justify-content: space-around;
+        align-items: flex-start;
         background-color: style.$color4;
+        overflow-y: auto;
+        overflow-x: auto;
+        border-bottom: 1px solid style.$color4;
     }
 }
 
@@ -28,6 +42,14 @@
     padding: 10px;
     background-color: style.$color4;
     color: style.$color2;
+    &__white {
+        font-family: "Press Start 2P";
+        box-shadow: 10px 10px style.$color5;
+        max-width: 50vw;
+        padding: 10px;
+        background: linear-gradient(90deg, style.$color1, style.$color2);
+        color: style.$color4;
+    }
 }
 
 .Text {
@@ -37,29 +59,26 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         margin: 20px;
         align-self: center;
-        width: 65vw;
+        width: 1500px;
         color: style.$color5;
         font-size: x-large;
         text-justify: newspaper;
         line-height: 30px;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        display: inline-block;
     }
-}
-.Text__left {
-    max-width: 60vw;
-    height: content;
-    align-self: center;
-    text-align: left;
-}
 
-.Text__right {
-    max-width: 60vw;
-    height: content;
-    align-self: center;
-    text-align: left;
+    &__white {
+        color: style.$color1;
+    }
 }
 
 .Profile {
+    align-self: flex-end;
+    height: 800px;
+    background-color: transparent;
+}
+.Image {
     height: 800px;
     background-color: transparent;
 }

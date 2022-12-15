@@ -71,10 +71,10 @@ const Skills = () => {
                         <p>
                             Click in any icon in the <b>left</b>.
                         </p>
+                        <img className={style.Face} src="src/assets/images/avatar.png" alt="" />
                     </div>
                 </div>
             )}
-            <img className={style.Face} src="src/assets/images/avatar.png" alt="" />
         </div>
     );
 };
