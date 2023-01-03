@@ -1,144 +1,31 @@
-## jp-portfolio
+# My Portfolio
 
-A Portfolio, built in React, as a showcase of my projects.
-The portoflio was built using:
+Welcome to my portfolio! This project was developed in a React framework and using Vite as a build tool. The main goal of this project is to showcase the projects I have developed during the _nology consultancy program, provide information about myself and my skills, and offer ways for others to contact me.
 
--   [Vite](https://vitejs.dev/)
--   [React](https://reactjs.org/)
--   [JavaScript](https://www.javascript.com/)
+## Getting Started
 
-# Install
-
--   After Cloning the repo into your local directory, you must:
-
-```bash
-cd jp-portoflio
-```
-
-```bash
+To get started with this project, clone the repository and install the dependencies:
+git clone https://github.com/jpchaib/my-portfolio.git
+cd my-portfolio
 npm install
-```
 
-```bash
+Then, start the development server:
 npm run dev
-```
 
-and finally open your local browser to check this application.
+This will start the development server and open the app in your default browser. You can now make changes to the code and see the updates in real-time.
 
-# Content
+## Building for Production
+To build the app for production, run the following command:
 
-This Portoflio contains:
-
--   A Brief Introduction of myself **Joao Pedro Chaib**
-
-<!-- --------------------------------------------------------------- -------------------------------------------------- -->
-
-# Qwik City App ⚡️
-
--   [Qwik Docs](https://qwik.builder.io/)
--   [Discord](https://qwik.builder.io/chat)
--   [Qwik GitHub](https://github.com/BuilderIO/qwik)
--   [@QwikDev](https://twitter.com/QwikDev)
--   [Vite](https://vitejs.dev/)
-
----
-
-## Project Structure
-
-This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just a extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
-
-Inside your project, you'll see the following directory structure:
-
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── routes/
-        └── ...
-```
-
--   `src/routes`: Provides the directory based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.builder.io/qwikcity/routing/overview/) for more info.
-
--   `src/components`: Recommended directory for components.
-
--   `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
-
-## Add Integrations and deployment
-
-Use the `npm run qwik add` command to add additional integrations. Some examples of integrations include: Cloudflare, Netlify or Express server, and the [Static Site Generator (SSG)](https://qwik.builder.io/qwikcity/static-site-generation/static-site-config/).
-
-```shell
-npm run qwik add # or `yarn qwik add`
-```
-
-## Development
-
-Development mode uses [Vite's development server](https://vitejs.dev/). During development, the `dev` command will server-side render (SSR) the output.
-
-```shell
-npm start # or `yarn start`
-```
-
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
-
-## Preview
-
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to locally preview a production build, and it should not be used as a production server.
-
-```shell
-npm run preview # or `yarn preview`
-```
-
-## Production
-
-The production build will generate client and server modules by running both client and server build commands. Additionally, the build command will use Typescript to run a type check on the source code.
-
-```shell
-npm run build # or `yarn build`
-```
-
-## Vercel Edge
-
-This starter site is configured to deploy to [Vercel Edge Functions](https://vercel.com/docs/concepts/functions/edge-functions), which means it will be rendered at an edge location near to your users.
-
-## Installation
-
-The adaptor will add a new `vite.config.ts` within the `adaptors/` directory, and a new entry file will be created, such as:
-
-```
-└── adaptors/
-    └── vercel-edge/
-        └── vite.config.ts
-└── src/
-    └── entry.vercel-edge.tsx
-```
-
-Additionally, within the `package.json`, the `build.server` script will be updated with the Vercel Edge build.
-
-## Production build
-
-To build the application for production, use the `build` command, this command will automatically run `npm run build.server` and `npm run build.client`:
-
-```shell
 npm run build
-```
 
-[Read the full guide here](https://github.com/BuilderIO/qwik/blob/main/starters/adaptors/vercel-edge/README.md)
+This will create a production-ready build of the app in the `dist` directory.
 
-## Dev deploy
+## Credits
 
-To deploy the application for development:
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
 
-```shell
-npm run deploy
-```
+## Contact
 
-Notice that you might need a [Vercel account](https://docs.Vercel.com/get-started/) in order to complete this step!
-
-## Production deploy
-
-The project is ready to be deployed to Vercel. However, you will need to create a git repository and push the code to it.
-
-You can [deploy your site to Vercel](https://vercel.com/docs/concepts/deployments/overview) either via a Git provider integration or through the Vercel CLI.
+You can contact me via email at [YOUR_EMAIL] or through my LinkedIn profile at [YOUR_LINKEDIN_PROFILE]. I'm always open to discussing new opportunities and collaborations.
