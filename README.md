@@ -32,4 +32,4 @@ This will create a production-ready build of the app in the `dist` directory.
 
 ## Contact
 
-You can contact me via email at [YOUR_EMAIL] or through my LinkedIn profile at [YOUR_LINKEDIN_PROFILE]. I'm always open to discussing new opportunities and collaborations.
+You can contact me via email at joaopedrochaib@gmail.com or through my LinkedIn profile at https://www.linkedin.com/in/joao-pedro-chaib-de-toledo-alves-pinto-39839915a/. I'm always open to discussing new opportunities and collaborations.
