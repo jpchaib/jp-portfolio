@@ -5,19 +5,23 @@ Welcome to my portfolio! This project was developed in a React framework and usi
 ## Getting Started
 
 To get started with this project, clone the repository and install the dependencies:
-git clone https://github.com/jpchaib/my-portfolio.git
-cd my-portfolio
-npm install
+
+`git clone https://github.com/jpchaib/jp-portfolio.git`
+
+`cd my-portfolio`
+
+`npm install`
 
 Then, start the development server:
-npm run dev
+
+`npm run dev`
 
 This will start the development server and open the app in your default browser. You can now make changes to the code and see the updates in real-time.
 
 ## Building for Production
 To build the app for production, run the following command:
 
-npm run build
+`npm run build`
 
 This will create a production-ready build of the app in the `dist` directory.
 
