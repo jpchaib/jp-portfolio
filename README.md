@@ -1,5 +1,8 @@
 # My Portfolio
 
+![jp-portfolio](https://media.giphy.com/media/uMNhzWRu67jO5EfFuF/giphy.gif)
+
+
 Welcome to my portfolio! This project was developed in a React framework and using Vite as a build tool. The main goal of this project is to showcase the projects I have developed during the _nology consultancy program, provide information about myself and my skills, and offer ways for others to contact me.
 
 ## Getting Started
